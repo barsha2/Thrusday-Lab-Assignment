@@ -1,22 +1,22 @@
 package Oopsinheritance;
 
-interface LibraryUser
+interface LibraryUser // interface
 {
-	void registerAccount();
+	void registerAccount(); // methods of interface
 	void requestBook();
 }
-class KidUsers implements LibraryUser
+class KidUsers implements LibraryUser // class which implementing interface
 {
 	private int age;
 	private String bookType;
-	public KidUsers(int age, String bookType)
+	public KidUsers(int age, String bookType) // constructor for initializing variables
 	{
 		this.age=age;
 		this.bookType=bookType;
 	}
 	
 	@Override
-	public void registerAccount() 
+	public void registerAccount() // method implementations
 	{
 		if(age<12)
 		{
@@ -43,18 +43,18 @@ class KidUsers implements LibraryUser
 	}
 	
 }
-class AdultUser implements LibraryUser
+class AdultUser implements LibraryUser // another class which implementing interface
 {
 	private int age;
 	private String bookType;
-	public AdultUser(int age, String bookType)
+	public AdultUser(int age, String bookType) // constructor
 	{
 		this.age=age;
 		this.bookType=bookType;
 	}
 	
 	@Override
-	public void registerAccount() 
+	public void registerAccount() //methods implementations
 	{
 		if(age>12)
 		{
@@ -82,7 +82,7 @@ class AdultUser implements LibraryUser
 	
 }
 
-public class Hndson4 
+public class Hndson4 // main method
 {
 	public static void main(String args[])
 	{
